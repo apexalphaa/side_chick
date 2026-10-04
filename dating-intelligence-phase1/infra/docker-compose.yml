@@ -1,0 +1,27 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: dating
+      POSTGRES_PASSWORD: dating
+      POSTGRES_DB: dating_ai
+    ports:
+      - "5432:5432"
+    volumes:
+      - dating_postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dating -d dating_ai"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - dating_redis:/data
+
+volumes:
+  dating_postgres:
+  dating_redis:

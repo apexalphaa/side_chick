@@ -1,0 +1,21 @@
+# Phase 2.1 Checklist
+- [x] Smooth weighted round robin
+- [x] Quota header parser
+- [x] Versioned price catalog
+- [x] Token-based cost estimation
+- [x] Streaming contract
+- [x] Multimodal content normalization
+- [x] Distributed-state abstraction
+- [x] Provider weights
+- [x] Stronger routing tests
+- [x] Quota tests
+- [x] Cost tests
+- [ ] Redis production implementation
+- [ ] Atomic distributed spend counters
+- [ ] Idempotency keys
+- [ ] Persistent telemetry worker
+- [ ] Provider-specific streaming implementations
+- [ ] Provider-specific multimodal implementations
+- [ ] Embeddings adapter
+- [ ] OpenTelemetry
+- [ ] Admin provider-control UI

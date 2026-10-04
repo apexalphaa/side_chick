@@ -1,0 +1,1 @@
+Phase 2.1 hardens the gateway without changing the agent-facing API. Redis binding, persistent telemetry, idempotency, provider-specific streaming/vision and OpenTelemetry remain the next hardening slice.
